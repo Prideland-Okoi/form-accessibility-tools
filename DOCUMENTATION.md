@@ -16,11 +16,12 @@ The Form Field Labeling Tool is a web-based application built with Flask that an
 1. Clone the repository:
 
    ```bash
-   git clone <repository_url>
-   cd <repository_directory>
+   git clone https://github.com/Prideland-Okoi/form-accessibility-tools.git
+   cd form-accessibility-tools
    ```
-
-2. Install the required dependencies:
+2. Set up virtual environment (virtualenv, venv)
+   
+4. Install the required dependencies:
    ```bash
    pip install flask beautifulsoup4 requests
    ```
