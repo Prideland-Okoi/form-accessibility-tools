@@ -1,0 +1,33 @@
+---
+tags:
+  - Checks
+summary: Check HTML content for accessibility
+description: This endpoint takes a URL in the request body, fetches the HTML content from the URL, and checks it for accessibility issues.
+parameters:
+  - in: body
+    name: body
+    required: true
+    schema:
+      type: object
+      properties:
+        url:
+          type: string
+          description: The URL of the HTML content to check
+          example: "https://www.example.com"
+responses:
+  200:
+    description: A successful response containing the accessibility report
+    schema:
+      type: object
+      properties:
+        report:
+          type: object
+          description: The accessibility report
+  400:
+    description: Error response when HTML content cannot be fetched
+    schema:
+      type: object
+      properties:
+        error:
+          type: string
+          example: "Failed to fetch HTML content from the provided URL."
